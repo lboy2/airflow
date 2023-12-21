@@ -61,7 +61,7 @@ PROVIDERS_ROOT = AIRFLOW_SOURCES_ROOT / "airflow" / "providers"
 CROSS_PROVIDERS_DEPS = "cross-providers-deps"
 DEPS = "deps"
 CURRENT_PYTHON_VERSION = f"{sys.version_info.major}.{sys.version_info.minor}"
-
+raise Exception("done")
 
 def apply_pypi_suffix_to_airflow_packages(dependencies: list[str]) -> None:
     """
