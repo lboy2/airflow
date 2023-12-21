@@ -50,7 +50,7 @@ from distutils import log  # isort: skip
 INSTALL_PROVIDERS_FROM_SOURCES = "INSTALL_PROVIDERS_FROM_SOURCES"
 PY39 = sys.version_info >= (3, 9)
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__a)
 
 AIRFLOW_SOURCES_ROOT = Path(__file__).parent.resolve()
 PROVIDERS_ROOT = AIRFLOW_SOURCES_ROOT / "airflow" / "providers"
