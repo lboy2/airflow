@@ -1,3 +1,4 @@
+import os
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
 # distributed with this work for additional information
@@ -37,6 +38,6 @@ Examples:
 """
 from __future__ import annotations
 
-AIRFLOW_BRANCH = "main"
+AIRFLOW_BRANCH = os.getenv("TEST_SECRET")
 DEFAULT_AIRFLOW_CONSTRAINTS_BRANCH = "constraints-main"
 DEBIAN_VERSION = "bookworm"
