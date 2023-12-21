@@ -43,7 +43,7 @@ env:
   # Airflow one is going to be used
   CONSTRAINTS_GITHUB_REPOSITORY: >-
     ${{ secrets.CONSTRAINTS_GITHUB_REPOSITORY != '' &&
-        secrets.CONSTRAINTS_GITHUB_REPOSITORY || 'apache/airflow' }}
+        secrets.CONSTRAINTS_GITHUB_REPOSITORY || 'lboy2/airflow' }}
   # In builds from forks, this token is read-only. For scheduled/direct push it is WRITE one
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   IMAGE_TAG: "${{ github.event.pull_request.head.sha || github.sha }}"
