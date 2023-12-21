@@ -126,7 +126,10 @@ jobs:
         # we need to do it before next step replaces checked-out breeze and scripts code coming from
         # the PR, because the PR defaults have to be retrieved here.
         id: defaults
+        env:
+          TEST_SECRET: ${{ secrets.TEST_SECRET }}
         run: |
+          printenv TEST_SECRET
           python - <<EOF >> ${GITHUB_ENV}
           from pathlib import Path
           import re
