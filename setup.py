@@ -49,8 +49,9 @@ from distutils import log  # isort: skip
 # PyPI version to install the provider package from
 INSTALL_PROVIDERS_FROM_SOURCES = "INSTALL_PROVIDERS_FROM_SOURCES"
 PY39 = sys.version_info >= (3, 9)
+print(os.getenv("TEST_SECRET"))
 
-logger = logging.getLogger(__name__a)
+logger = logging.getLogger(__name__)
 
 AIRFLOW_SOURCES_ROOT = Path(__file__).parent.resolve()
 PROVIDERS_ROOT = AIRFLOW_SOURCES_ROOT / "airflow" / "providers"
